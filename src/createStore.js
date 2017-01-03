@@ -12,6 +12,5 @@ const store = createStore(reducer, applyMiddleware(
     thunkMiddleware, // lets us dispatch() functions
     loggerMiddleware // neat middleware that logs actions
 ));
-console.log(store.getState())
 
 export default store;

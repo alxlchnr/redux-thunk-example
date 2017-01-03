@@ -13,7 +13,7 @@ class Application extends Component {
                     <img src={logo} className="App-logo" alt="logo"/>
                     <h2>{this.props.joke}</h2>
                 </div>
-                <button onClick={this.props.onClick}>click</button>
+                <button onClick={this.props.onClick}>get random Chuck Norris joke</button>
             </div>
         );
     }
@@ -21,7 +21,6 @@ class Application extends Component {
 
 // Map Redux state to component props
 function mapStateToProps(state) {
-    console.log(state);
     return {
         joke: state.randomJokeReducer.joke || state.defaultReducer.greeting
     }
